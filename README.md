@@ -276,35 +276,6 @@ go test -v ./tests/brand_handler_test.go
 ```
 Replace `brand_handler_test.go` with the specific test file you want to run.
 
-#### Run a Specific Test Function
-```bash
-go test -v ./tests/brand_handler_test.go -run TestCreateBrandHandler
-```
-Replace `TestCreateBrandHandler` with the name of the test function you want to execute.
-
-#### Folder Structure for Tests
-Tests are located in the `tests` folder, and each handler has a corresponding test file:
-```
-project/
-├── handlers/
-│   ├── brand_handler.go
-│   ├── customer_handler.go
-│   ├── voucher_handler.go
-│   ├── redemption_handler.go
-├── models/
-│   ├── brand.go
-│   ├── customer.go
-│   ├── voucher.go
-│   ├── redemption.go
-├── tests/
-│   ├── brand_handler_test.go
-│   ├── customer_handler_test.go
-│   ├── voucher_handler_test.go
-│   ├── redemption_handler_test.go
-├── main.go
-```
-
-This structure helps in organizing tests effectively.
 
 ### Reset Database for Testing
 Ensure your test database is clean before running tests. A helper function can be used to reset the database, like this:
